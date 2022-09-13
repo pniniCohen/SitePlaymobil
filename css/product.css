@@ -1,0 +1,52 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    direction: rtl;
+    display: grid;
+    grid-template-columns: minmax(150px, auto) repeat(6, minmax(40px, auto));
+    grid-template-rows: repeat(auto-fill, minmax(40px, auto));
+    overflow-x: hidden;
+}
+
+
+.taprit_gallery ul li {
+    width: max-content;
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(138, 212, 241);
+    font-size: 28px;
+    margin-bottom: 5ch;
+}
+
+a:hover {
+    font-size: 20px;
+    color: rgb(138, 212, 241);
+
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery div {
+    margin-right: 14px;
+}
+
+p {
+    text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+    .gallery div {
+        max-width: 90%;
+        margin-left: 30px;
+    }
+}
